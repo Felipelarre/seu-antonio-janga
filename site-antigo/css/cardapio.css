@@ -1,0 +1,325 @@
+/* ==========================================================================
+   SEU ANTÔNIO JANGA — cardapio.css
+   Interactive Menu: Sticky Category Tabs, Instant Search, Detailed Items
+   ========================================================================== */
+
+/* Menu Interactive Controls (Search & Sticky Filter Pills) */
+.menu-controls-bar {
+  position: sticky;
+  top: 76px;
+  z-index: 100;
+  padding: 16px 0;
+  background: rgba(18, 14, 10, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--line-medium);
+  margin-bottom: 48px;
+  transition: all 0.3s var(--ease-smooth);
+}
+
+.menu-controls-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Category Filter Tabs */
+.menu-filters {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.menu-filter {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--line-medium);
+  font-family: var(--f-mono);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--cream-300);
+  background: var(--ink-800);
+  transition: all 0.25s var(--ease-smooth);
+  cursor: pointer;
+}
+
+.menu-filter:hover {
+  color: var(--cream-100);
+  border-color: var(--amber-400);
+  background: var(--ink-750);
+}
+
+.menu-filter.is-active {
+  background: linear-gradient(135deg, var(--amber-400) 0%, var(--amber-500) 100%);
+  color: var(--ink-950);
+  border-color: var(--amber-300);
+  font-weight: 700;
+  box-shadow: 0 4px 16px rgba(245, 158, 11, 0.35);
+}
+
+.menu-filter .badge-count {
+  font-size: 0.72rem;
+  padding: 2px 7px;
+  border-radius: var(--radius-pill);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.menu-filter.is-active .badge-count {
+  background: rgba(10, 8, 6, 0.25);
+  color: var(--ink-950);
+}
+
+/* Menu Instant Search */
+.menu-search-wrap {
+  position: relative;
+  min-width: 260px;
+  flex: 0 1 320px;
+}
+
+.menu-search-wrap svg {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  color: var(--cream-400);
+  pointer-events: none;
+}
+
+.menu-search-input {
+  width: 100%;
+  padding: 10px 16px 10px 42px;
+  border-radius: var(--radius-pill);
+  background: var(--ink-900);
+  border: 1px solid var(--line-medium);
+  color: var(--cream-100);
+  font-family: var(--f-body);
+  font-size: 0.88rem;
+  transition: all 0.25s var(--ease-smooth);
+}
+
+.menu-search-input:focus {
+  border-color: var(--amber-400);
+  background: var(--ink-950);
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.15);
+  outline: none;
+}
+
+.menu-search-input::placeholder {
+  color: var(--cream-400);
+}
+
+/* Category Sections */
+.menu-category {
+  margin-bottom: 80px;
+  scroll-margin-top: 170px;
+}
+
+.menu-category-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 32px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--line-subtle);
+  flex-wrap: wrap;
+}
+
+.menu-category-head h2 {
+  font-size: clamp(1.8rem, 3.2vw, 2.4rem);
+  color: var(--cream-100);
+}
+
+.menu-category-head .count {
+  font-family: var(--f-mono);
+  font-size: 0.85rem;
+  color: var(--amber-400);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+/* Detailed Menu List Items (Complementary to Comanda Photo Cards) */
+.menu-list-wrap {
+  margin-top: 32px;
+  background: var(--ink-800);
+  border: 1px solid var(--line-subtle);
+  border-radius: var(--radius-lg);
+  padding: 12px 32px;
+}
+
+.menu-item-simple {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 22px 0;
+  border-bottom: 1px dashed var(--line-subtle);
+  transition: transform 0.2s var(--ease-smooth);
+}
+
+.menu-item-simple:last-child {
+  border-bottom: none;
+}
+
+.menu-item-simple:hover {
+  transform: translateX(4px);
+}
+
+.menu-item-info {
+  flex: 1;
+}
+
+.menu-item-title-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.menu-item-simple h4 {
+  font-family: var(--f-display);
+  font-size: 1.18rem;
+  font-weight: 600;
+  color: var(--cream-100);
+}
+
+.menu-item-tag {
+  font-family: var(--f-mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 2px 8px;
+  border-radius: var(--radius-pill);
+}
+
+.menu-item-tag.tag-hot {
+  background: rgba(225, 29, 72, 0.15);
+  color: #FB7185;
+  border: 1px solid rgba(225, 29, 72, 0.3);
+}
+
+.menu-item-tag.tag-chef {
+  background: rgba(245, 158, 11, 0.15);
+  color: var(--amber-400);
+  border: 1px solid var(--amber-border);
+}
+
+.menu-item-tag.tag-fresh {
+  background: rgba(16, 185, 129, 0.15);
+  color: var(--green-400);
+  border: 1px solid var(--green-glow);
+}
+
+.menu-item-simple p {
+  color: var(--cream-300);
+  font-size: 0.92rem;
+  line-height: 1.5;
+  margin-top: 6px;
+  max-width: 52ch;
+}
+
+.menu-item-price-col {
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.menu-item-price-col .comanda-price {
+  font-size: 1.15rem;
+}
+
+/* Sub-section headers (e.g., Autorais vs Clássicos vs Sem Álcool) */
+.menu-subhead {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-family: var(--f-mono);
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--amber-400);
+  margin: 38px 0 20px;
+}
+
+.menu-subhead::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--line-subtle);
+}
+
+/* Legend */
+.menu-legend {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+
+.abv-note {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.abv-note .dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+}
+
+.abv-note .dot.alc { background: var(--red-500); box-shadow: 0 0 6px var(--red-glow); }
+.abv-note .dot.free { background: var(--green-400); box-shadow: 0 0 6px var(--green-glow); }
+
+.abv-note span {
+  font-family: var(--f-mono);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--cream-300);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/* Empty Search State */
+.menu-empty-state {
+  display: none;
+  text-align: center;
+  padding: 60px 20px;
+  background: var(--ink-800);
+  border-radius: var(--radius-lg);
+  border: 1px dashed var(--line-medium);
+}
+
+.menu-empty-state.is-visible {
+  display: block;
+}
+
+.menu-empty-state h3 {
+  font-size: 1.4rem;
+  color: var(--cream-100);
+}
+
+.menu-empty-state p {
+  color: var(--cream-300);
+  margin-top: 8px;
+  font-size: 0.95rem;
+}

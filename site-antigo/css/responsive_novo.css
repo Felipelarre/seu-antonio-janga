@@ -1,0 +1,540 @@
+/* ========================================
+   RESPONSIVE & MOBILE-FIRST BREAKPOINTS
+   ======================================== */
+
+/* Mobile First - Base Styles Already Apply */
+
+/* ========================================
+   SMALL DEVICES (320px and up)
+   ======================================== */
+
+@media (max-width: 768px) {
+
+  :root {
+    --container-padding: 1.5rem;
+    --space-2xl: 3rem;
+    --space-3xl: 4rem;
+  }
+
+  /* Header Mobile */
+  .nav-desktop {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: var(--color-dark);
+    border-bottom: 1px solid rgba(212, 165, 116, 0.2);
+    padding: var(--space-lg);
+    gap: var(--space-md);
+    max-height: calc(100vh - 60px);
+    overflow-y: auto;
+    z-index: var(--z-dropdown);
+    transform: translateX(-100%);
+    transition: transform var(--transition-base);
+  }
+
+  .nav-desktop.is-open {
+    transform: translateX(0);
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-toggle.is-open span:nth-child(1) {
+    transform: rotate(45deg) translate(10px, 10px);
+  }
+
+  .nav-toggle.is-open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav-toggle.is-open span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+  }
+
+  /* Hero Mobile */
+  .hero {
+    min-height: 90vh;
+    padding: var(--space-lg);
+  }
+
+  .hero-title {
+    font-size: clamp(1.75rem, 8vw, 2.5rem);
+  }
+
+  .hero-subtitle {
+    font-size: var(--text-base);
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+  }
+
+  .hero-badges {
+    gap: var(--space-sm);
+  }
+
+  .badge {
+    font-size: var(--text-xs);
+    padding: var(--space-xs) var(--space-sm);
+  }
+
+  /* Section Mobile */
+  section {
+    padding: var(--space-2xl) 0;
+  }
+
+  .section-header h2 {
+    font-size: var(--text-2xl);
+  }
+
+  .section-header p {
+    font-size: var(--text-base);
+  }
+
+  /* Grids Mobile */
+  .diferenciais-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+
+  .diferencial-card {
+    padding: var(--space-md);
+  }
+
+  .card-number {
+    position: static;
+    margin-bottom: var(--space-md);
+  }
+
+  .pratos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .galeria-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Depoimentos Mobile */
+  .depoimento-card {
+    min-height: auto;
+  }
+
+  /* Reservas Mobile */
+  .reservas-content {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .form-column {
+    padding: var(--space-lg);
+  }
+
+  .info-column {
+    gap: var(--space-md);
+  }
+
+  .info-card {
+    padding: var(--space-md);
+  }
+
+  /* Split Section Mobile */
+  .split {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+  }
+
+  /* Footer Mobile */
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+
+  .footer-social {
+    justify-content: flex-start;
+  }
+
+  /* Buttons Mobile */
+  .btn {
+    padding: var(--space-md) var(--space-lg);
+  }
+
+  .btn-lg {
+    padding: var(--space-md) var(--space-lg);
+  }
+
+  /* Seal Mobile */
+  .seal {
+    width: 80px;
+    height: 80px;
+  }
+
+  .seal span {
+    font-size: var(--text-lg);
+  }
+
+  .seal p {
+    font-size: var(--text-xs);
+  }
+
+  .seal-md {
+    width: 100px;
+    height: 100px;
+  }
+
+  /* Typography Mobile */
+  h1 {
+    font-size: var(--text-2xl);
+  }
+
+  h2 {
+    font-size: var(--text-xl);
+  }
+
+  h3 {
+    font-size: var(--text-lg);
+  }
+
+  p {
+    font-size: var(--text-sm);
+  }
+
+  /* Stagger animations mobile */
+  [data-reveal] {
+    animation-duration: var(--transition-base);
+  }
+
+}
+
+/* ========================================
+   MEDIUM DEVICES (769px to 1024px)
+   ======================================== */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  :root {
+    --container-padding: 2rem;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  .diferenciais-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pratos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .galeria-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .reservas-content {
+    grid-template-columns: 1fr;
+  }
+
+  .split {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+/* ========================================
+   LARGE DEVICES (1025px+)
+   ======================================== */
+
+@media (min-width: 1025px) {
+
+  .diferenciais-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .pratos-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .galeria-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .reservas-content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-inner {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* Hover effects desktop only */
+  .diferencial-card:hover {
+    transform: translateY(-8px);
+  }
+
+  .prato-card:hover {
+    transform: translateY(-8px);
+  }
+
+}
+
+/* ========================================
+   EXTRA LARGE DEVICES (1440px+)
+   ======================================== */
+
+@media (min-width: 1440px) {
+
+  :root {
+    --container-width: 1400px;
+  }
+
+  section {
+    padding: var(--space-3xl) 0;
+  }
+
+}
+
+/* ========================================
+   TABLET LANDSCAPE (1024px, portrait)
+   ======================================== */
+
+@media (max-height: 600px) and (orientation: landscape) {
+
+  .hero {
+    min-height: 100vh;
+  }
+
+  .hero-title {
+    font-size: var(--text-2xl);
+  }
+
+  .hero-subtitle {
+    font-size: var(--text-sm);
+  }
+
+  section {
+    padding: var(--space-lg) 0;
+  }
+
+}
+
+/* ========================================
+   TOUCH DEVICES & ACCESSIBILITY
+   ======================================== */
+
+/* Ensure touch targets are at least 44x44px */
+@media (hover: none) and (pointer: coarse) {
+
+  .btn,
+  a,
+  button,
+  input,
+  select,
+  textarea,
+  .indicator {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+    min-height: 48px;
+  }
+
+  /* Remove hover effects on touch */
+  .diferencial-card:hover {
+    transform: none;
+  }
+
+  .prato-card:hover {
+    transform: none;
+  }
+
+  /* Increase tap area */
+  .nav-link {
+    padding: var(--space-md);
+  }
+
+}
+
+/* ========================================
+   PRINT STYLES
+   ======================================== */
+
+@media print {
+
+  .site-header,
+  .site-footer,
+  .nav-toggle,
+  .hero-scroll-hint,
+  [role="tablist"] {
+    display: none !important;
+  }
+
+  * {
+    box-shadow: none !important;
+  }
+
+  section {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+}
+
+/* ========================================
+   HIGH CONTRAST MODE
+   ======================================== */
+
+@media (prefers-contrast: more) {
+
+  :root {
+    --color-accent-red: #B3261E;
+    --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .btn-primary {
+    border-width: 2px;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+}
+
+/* ========================================
+   REDUCED MOTION (Accessibility)
+   ======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
+  }
+
+}
+
+/* ========================================
+   DARK MODE (OPTIONAL)
+   ======================================== */
+
+@media (prefers-color-scheme: dark) {
+
+  /* Uncomment if implementing dark mode */
+  /* 
+  :root {
+    --bg-primary: #121212;
+    --bg-secondary: #1E1E1E;
+    --text-primary: #FFFFFF;
+    --text-secondary: #B0B0B0;
+  }
+  */
+
+}
+
+/* ========================================
+   LANDSCAPE PHONE
+   ======================================== */
+
+@media (max-height: 500px) {
+
+  .hero {
+    min-height: auto;
+    padding: var(--space-lg) 0;
+  }
+
+  .hero-title {
+    font-size: var(--text-xl);
+  }
+
+  .hero-cta-group {
+    margin-bottom: var(--space-md);
+  }
+
+}
+
+/* ========================================
+   SMALL PHONES (320px - 360px)
+   ======================================== */
+
+@media (max-width: 360px) {
+
+  :root {
+    --text-4xl: 1.75rem;
+    --text-3xl: 1.5rem;
+    --text-2xl: 1.25rem;
+    --space-lg: 1.5rem;
+    --space-md: 1rem;
+  }
+
+  .hero-badges {
+    flex-direction: column;
+  }
+
+  .badge {
+    width: 100%;
+    text-align: center;
+  }
+
+  .pratos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .galeria-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+/* ========================================
+   VERY WIDE SCREENS (2K+)
+   ======================================== */
+
+@media (min-width: 2560px) {
+
+  :root {
+    --container-width: 1600px;
+    --text-4xl: 3.5rem;
+    --text-3xl: 2.5rem;
+  }
+
+  section {
+    padding: var(--space-3xl) 0;
+  }
+
+}

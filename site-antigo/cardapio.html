@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cardápio Completo | Seu Antônio Janga — Bar e Petiscaria</title>
+<meta name="description" content="Confira o cardápio completo do Seu Antônio Janga: petiscos regionais, caldinhos de camarão e marisco, drinks clássicos e autorais, espetinhos doces e refeições no Janga, Paulista - PE.">
+<link rel="canonical" href="https://www.seuantoniojanga.com.br/cardapio.html">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon/android-chrome-192x192.png">
+<link rel="apple-touch-icon" href="assets/images/favicon/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#0A0806">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="css/style.css?v=20260826-4">
+<link rel="stylesheet" href="css/cardapio.css?v=20260826-4">
+<link rel="stylesheet" href="css/responsive.css?v=20260826-4">
+</head>
+<body>
+
+<!-- Loader Screen -->
+<div class="loader" aria-hidden="true">
+  <p class="loader-mark">Seu Antônio <em>Janga</em></p>
+  <div class="loader-ring"></div>
+</div>
+<noscript><style>.loader{ display:none !important; }</style></noscript>
+
+<!-- Header & Navigation -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand" aria-label="Seu Antônio Janga">
+      <img src="assets/images/logo/logo-seu-antonio-simples.png" alt="Logo Seu Antônio Janga">
+      <span class="brand-text">Seu Antônio<em>Bar &amp; Petiscaria</em></span>
+    </a>
+    <nav class="main-nav" id="main-navigation" aria-label="Navegação principal">
+      <a href="index.html">Início</a>
+      <a href="cardapio.html" class="is-active">Cardápio</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="reservas.html">Reservas</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+    <div class="header-cta">
+      <a href="reservas.html" class="btn btn-outline">Reservar mesa</a>
+      <a href="https://wa.me/5581979039543?text=Ol%C3%A1!%20Gostaria%20de%20tirar%20uma%20d%C3%BAvida%20sobre%20o%20card%C3%A1pio." class="btn btn-whatsapp" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5.1-1.3A10 10 0 1012 2zm5.8 14.3c-.3.7-1.5 1.4-2 1.4-.6.1-1.2.2-3.9-1a11 11 0 01-4.5-4.6c-.7-1.2-.7-2.2-.6-2.5 0-.4.6-1.4 1.2-1.7.2-.2.5-.2.7-.2h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.5.7c-.1.2-.2.3 0 .6a8 8 0 003.5 3.2c.3.1.4.1.6-.1l.6-.8c.2-.2.4-.2.6-.1l2 1c.2.1.4.2.4.4a2 2 0 01-.1.6z"/></svg>
+        WhatsApp
+      </a>
+      <button type="button" class="nav-toggle" aria-label="Abrir menu de navegação" aria-controls="main-navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <p class="crumb-trail"><a href="index.html">Início</a> <span>/</span> Cardápio Oficial</p>
+      <span class="eyebrow">A comanda inteira, sem segredo</span>
+      <h1>Do caldinho ao <em>drink autoral</em>, tudo que sai da nossa cozinha.</h1>
+      <p class="lede">Porções fartas, tempero com história e bebidas servidas no ponto exato de refrescância. Use os filtros por categoria ou a barra de busca rápida abaixo para encontrar seu pedido.</p>
+    </div>
+  </section>
+
+  <!-- Interactive Controls Bar (Sticky Tabs & Search) -->
+  <div class="menu-controls-bar">
+    <div class="container menu-controls-inner">
+      <div class="menu-filters" role="tablist" aria-label="Filtrar cardápio por categoria">
+        <button class="menu-filter is-active" data-filter="todos" role="tab" aria-selected="true">
+          Todos os Itens <span class="badge-count">24</span>
+        </button>
+        <button class="menu-filter" data-filter="petiscos" role="tab" aria-selected="false">
+          Petiscos &amp; Porções <span class="badge-count">10</span>
+        </button>
+        <button class="menu-filter" data-filter="drinks" role="tab" aria-selected="false">
+          Drinks &amp; Coquetéis <span class="badge-count">10</span>
+        </button>
+        <button class="menu-filter" data-filter="doces" role="tab" aria-selected="false">
+          Espetinhos Doces <span class="badge-count">4</span>
+        </button>
+        <button class="menu-filter" data-filter="refeicoes" role="tab" aria-selected="false">
+          Refeições <span class="badge-count">3</span>
+        </button>
+      </div>
+
+      <div class="menu-search-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        <input type="search" id="menu-search-input" class="menu-search-input" placeholder="Buscar petisco, drink, ingrediente…" aria-label="Buscar no cardápio">
+      </div>
+    </div>
+  </div>
+
+  <!-- Menu Content Section -->
+  <section style="padding-top:0;">
+    <div class="container">
+
+      <!-- ================= PETISCOS & PORÇÕES ================= -->
+      <div class="menu-category" id="petiscos" data-category="petiscos">
+        <div class="menu-category-head">
+          <div>
+            <h2>Petiscos &amp; Porções</h2>
+            <p style="color:var(--cream-300); font-size:0.95rem; margin-top:4px;">Para beliscar e dividir à mesa com a galera</p>
+          </div>
+          <span class="count">10 Opções Selecionadas</span>
+        </div>
+
+        <div class="menu-grid" data-reveal="stagger">
+          <article class="comanda menu-item" data-search-text="camarão empanado crocante molho petisco">
+            <div class="comanda-media">
+              <img src="assets/images/comida/galeria-comida-4.jpg" alt="Camarão empanado crocante com molho da casa">
+              <span class="comanda-badge-top-right">Mais Pedido</span>
+            </div>
+            <div class="comanda-perf"></div>
+            <div class="comanda-body">
+              <div class="comanda-head">
+                <h3>Camarão Empanado</h3>
+                <span class="comanda-price">R$ 54</span>
+              </div>
+              <p>Crocante por fora, suculento por dentro, servido com nosso molho tártaro especial da casa.</p>
+              <div class="comanda-footer-tags">
+                <span class="comanda-chip">Frutos do Mar</span>
+                <span class="comanda-chip">Porção Média</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="comanda menu-item" data-search-text="costela barbecue chapa defumado carne petisco">
+            <div class="comanda-media">
+              <img src="assets/images/comida/galeria-comida-5.jpg" alt="Costela barbecue na chapa">
+              <span class="comanda-tag">Na Chapa</span>
+            </div>
+            <div class="comanda-perf"></div>
+            <div class="comanda-body">
+              <div class="comanda-head">
+                <h3>Costela Barbecue</h3>
+                <span class="comanda-price">R$ 62</span>
+              </div>
+              <p>Na chapa de ferro quente, extremamente macia e envolvida em molho barbecue caramelizado.</p>
+              <div class="comanda-footer-tags">
+                <span class="comanda-chip">Chapa Quente</span>
+                <span class="comanda-chip">Fartura</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="comanda menu-item" data-search-text="rubação carne seca queijo coalho paraíba pernambuco">
+            <div class="comanda-media">
+              <img src="assets/images/sobre/sobre-destaque-seu-antonio.jpg" alt="Rubação tradicional nordestina">
+              <span class="comanda-tag">Regional Raiz</span>
+            </div>
+            <div class="comanda-perf"></div>
+            <div class="comanda-body">
+              <div class="comanda-head">
+                <h3>Rubação Nordestina</h3>
+                <span class="comanda-price">R$ 44</span>
+              </div>
+              <p>Receita paraibana de tradição, cheia de queijo coalho dourado, feijão fradinho e carne de sol desfiada.</p>
+              <div class="comanda-footer-tags">
+                <span class="comanda-chip">Receita de Família</span>
+                <span class="comanda-chip">Cremoso</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="menu-list-wrap">
+          <ul>
+            <li class="menu-item-simple menu-item" data-search-text="espetinho de carne com bacon farofa churrasco">
+              <div class="menu-item-info">
+                <div class="menu-item-title-row">
+                  <h4>Espetinho de Carne com Bacon</h4>
+                  <span class="menu-item-tag tag-hot">Grelhado na hora</span>
+                </div>
+                <p>Cortes nobres intercalados com bacon crocante, acompanhados de farofa de manteiga e vinagrete.</p>
+              </div>
+              <div class="menu-item-price-col">
+                <span class="comanda-price">R$ 18</span>
+              </div>
+            </li>
+
+            <li class="menu-item-simple menu-item" data-search-text="espetinho de frango com bacon grelhado">
+              <div class="menu-item-info">
+                <div class="menu-item-title-row">
+                  <h4>Espetinho de Frango com Bacon</h4>
+                  <span class="menu-item-tag tag-chef">Favorito</span>
+                </div>
+                <p>Peito de frango marinado com ervas e enrolado em bacon defumado, assado na brasa no ponto ideal.</p>
+              </div>
+              <div class="menu-item-price-col">
+                <span class="comanda-price">R$ 16</span>
+              </div>
+            </li>
+
+            <li class="menu-item-simple menu-item" data-search-text="peixe com fritas filé peixe frito batata">
+              <div class="menu-item-info">
+                <div class="menu-item-title-row">
+                  <h4>Peixe com Fritas</h4>
+                  <span class="menu-item-tag tag-fresh">Litoral</span>
+                </div>
+                <p>Iscas de filé de peixe fresco empanadas com crocância leve, guarnecidas com batatas rústicas.</p>
+              </div>
+              <div class="menu-item-price-col">
+                <span class="comanda-price">R$ 48</span>
+              </div>
+            </li>
+
+            <li class="menu-item-simple menu-item" data-search-text="macaxeira frita aipim mandioca crocante">
+              <div class="menu-item-info">
+                <div class="menu-item-title-row">
+                  <h4>Macaxeira Frita Crocante</h4>
+                  <span class="menu-item-tag tag-chef">Raiz</span>
+                </div>
+                <p>Mandioca selecionada, cozida e dourada na manteiga de garrafa até ficar crocante e macia por dentro.</p>
+              </div>
+              <div class="menu-item-price-col">
+                <span class="comanda-price">R$ 22</span>
+              </div>
+            </li>
+
+            <li class="menu-item-simple menu-item" data-search-text="caldinho de camarão cremoso frutos do mar">
+              <div class="menu-item-info">
+                <div class="menu-item-title-row">
+                  <h4>Caldinho de Camarão</h4>
+                  <span class="menu-item-tag tag-hot">Mais Elogiado</span>
+                </div>
+                <p>Cremoso, encorpado, com tempero da casa e finalizado com camarões inteiros e torresminho.</p>
+              </div>
+              <div class="menu-item-price-col">
+                <span class="comanda-price">R$ 16</span>
+              </div>
+            </li>
+
+            <li class="menu-item-simple menu-item" data-search-text="caldinho de feijoada porção individual">
+              <div class="menu-item-info">
+                <div class="menu-item-title-row">
+                  <h4>Caldinho de Feijoada</h4>
+                </div>
+                <p>O clássico sabor do feijão preto com carnes nobres defumadas, cheiro-verde e torresmo crocante.</p>
+              </div>
+              <div class="menu-item-price-col">
+                <span class="comanda-price">R$ 14</span>
+              </div>
+            </li>
+
+            <li class="menu-item-simple menu-item" data-search-text="caldinho de marisco litoral frutos do mar">
+              <div class="menu-item-info">
+                <div class="menu-item-title-row">
+                  <h4>Caldinho de Marisco</h4>
+                  <span class="menu-item-tag tag-fresh">Fresco do Dia</span>
+                </div>
+                <p>Mariscos frescos do litoral pernambucano cozidos no leite de coco artesanal e azeite de dendê suave.</p>
+              </div>
+              <div class="menu-item-price-col">
+                <span class="comanda-price">R$ 18</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= DRINKS & COQUETÉIS ================= -->
+      <div class="menu-category" id="drinks" data-category="drinks">
+        <div class="menu-category-head">
+          <div>
+            <h2>Drinks &amp; Coquetéis</h2>
+            <p style="color:var(--cream-300); font-size:0.95rem; margin-top:4px;">Criações autorais e coquetelaria clássica bem executada</p>
+          </div>
+          <div class="menu-legend">
+            <div class="abv-note"><span class="dot alc"></span><span>Com Álcool</span></div>
+            <div class="abv-note"><span class="dot free"></span><span>Sem Álcool (Mocktails)</span></div>
+          </div>
+        </div>
+
+        <div class="menu-subhead">Autorais da Casa</div>
+
+        <div class="menu-grid" data-reveal="stagger">
+          <article class="comanda menu-item" data-search-text="explosão seu antonio frutas vermelhas hortelã limão autoral drink">
+            <div class="comanda-media">
+              <img src="assets/images/drinks/drink-explosao-seu-antonio.jpg" alt="Explosão Seu Antônio, drink autoral">
+              <span class="comanda-badge-top-right">Drink Assinatura</span>
+            </div>
+            <div class="comanda-perf"></div>
+            <div class="comanda-body">
+              <div class="comanda-head">
+                <h3>Explosão Seu Antônio</h3>
+                <span class="comanda-price">R$ 28</span>
+              </div>
+              <p>O drink que virou identidade do bar: frutas vermelhas frescas maceradas, hortelã e base cítrica vibrante.</p>
+              <div class="comanda-footer-tags">
+                <span class="comanda-chip">Frutado &amp; Cítrico</span>
+                <span class="comanda-chip">Taça Especial</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="comanda menu-item" data-search-text="melancita gin melancia taça refrescante autoral drink">
+            <div class="comanda-media">
+              <img src="assets/images/drinks/drink-melancita-gin.jpg" alt="Melancita Gin">
+              <span class="comanda-tag">Autoral</span>
+            </div>
+            <div class="comanda-perf"></div>
+            <div class="comanda-body">
+              <div class="comanda-head">
+                <h3>Melancita Gin</h3>
+                <span class="comanda-price">R$ 30</span>
+              </div>
+              <p>Gin botânico harmonizado com suco fresco de melancia e gelo cristalino — frescor total à beira-mar.</p>
+              <div class="comanda-footer-tags">
+                <span class="comanda-chip">Refrescante</span>
+                <span class="comanda-chip">Gin Botânico</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="comanda menu-item" data-search-text="sunset laranja espuma cítrico autoral drink">
+            <div class="comanda-media">
+              <img src="assets/images/drinks/drink-sunset.jpg" alt="Drink Sunset">
+              <span class="comanda-tag">Autoral</span>
+            </div>
+            <div class="comanda-perf"></div>
+            <div class="comanda-body">
+              <div class="comanda-head">
+                <h3>Sunset Janga</h3>
+                <span class="comanda-price">R$ 29</span>
+              </div>
+              <p>A beleza do pôr do sol em camadas: notas cítricas de laranja bahia, base aromática e espuma aveludada.</p>
+              <div class="comanda-footer-tags">
+                <span class="comanda-chip">Espuma Cremosa</span>
+                <span class="comanda-chip">Aveludado</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="menu-subhead">Clássicos &amp; Coquetelaria Internacional</div>
+
+        <div class="menu-list-wrap">
+          <ul>
+            <li class="menu-item-simple menu-item" data-search-text="strawberry gin morango fresco gin tônica">
+              <div class="menu-item-info">
+                <div class="menu-item-title-row">
+                  <h4>Strawberry Gin</h4>
+                  <span class="menu-item-tag tag-chef">Autoral</span>
+                </div>
+                <p>Gin infusionado com morangos frescos, água tônica artesanal e finalização com twist de zimbro.</p>
+              </div>
+              <div class="menu-item-price-col">
+                <span class="comanda-price">R$ 29</span>
+              </div>
+            </li>
+
+            <li class="menu-item-simple menu-item" data-search-text="mojito rum hortelã limão água com gás">
+              <div class="menu-item-info">
+                <div class="menu-item-title-row">
+                  <h4>Mojito Cubano</h4>
+                  <span class="menu-item-tag tag-fresh">Clássico</span>
+                </div>
+                <p>Rum carta branca, hortelã fresca macerada, suco de limão taiti, açúcar orgânico e água com gás.</p>
+              </div>
+              <div class="menu-item-price-col">
+                <span class="comanda-price">R$ 26</span>
+              </div>
+            </li>
+
+            <li class="menu-item-simple menu-item" data-search-text="margarita tequila licor de laranja limão">
+              <div class="menu-item-info">
+                <div class="menu-item-title-row">
+                  <h4>Margarita Tradicional</h4>
+                  <span class="menu-item-tag tag-hot">Tequila</span>
+                </div>
+                <p>Tequila prata, triple sec de laranjas de curaçao, suco de limão fresco e borda com flor de sal.</p>
+              </div>
+              <div class="menu-item-price-col">
+                <span class="comanda-price">R$ 28</span>
+              </div>
+            </li>
+
+            <li class="menu-item-simple menu-item" data-search-text="caipirinha cachaça limão açúcar">
+              <div class="menu-item-info">
+                <div class="menu-item-title-row">
+                  <h4>Caipirinha Raiz</h4>
+                  <span class="menu-item-tag tag-chef">Brasil</span>
+                </div>
+                <p>Cachaça artesanal de alambique pernambucano, limão taiti espremido na hora e gelo triturado.</p>
+              </div>
+              <div class="menu-item-price-col">
+                <span class="comanda-price">R$ 20</span>
+              </div>
+            </li>
+
+            <li class="menu-item-simple menu-item" data-search-text="moscow mule vodka gengibre espuma limão">
+              <div class="menu-item-info">
+                <div class="menu-item-title-row">
+                  <h4>Moscow Mule</h4>
+                  <span class="menu-item-tag tag-hot">Mais Pedido</span>
+                </div>
+                <p>Vodka destilada, xarope artesanal de gengibre picante, suco de limão e espuma densa de gengibre.</p>
+              </div>
+              <div class="menu-item-price-col">
+                <span class="comanda-price">R$ 27</span>
+              </div>
+            </li>
+
+            <li class="menu-item-simple menu-item" data-search-text="negroni gin vermute campari clássico">
+              <div class="menu-item-info">
+                <div class="menu-item-title-row">
+                  <h4>Negroni Italiano</h4>
+                  <span class="menu-item-tag tag-hot">Forte &amp; Seco</span>
+                </div>
+                <p>Partes iguais de London Dry Gin, Vermute Rosso artesanal e Campari, perfumado com casca de laranja.</p>
+              </div>
+              <div class="menu-item-price-col">
+                <span class="comanda-price">R$ 30</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="menu-subhead">Opções Sem Álcool (Mocktails &amp; Sucos)</div>
+
+        <div class="menu-list-wrap">
+          <ul>
+            <li class="menu-item-simple menu-item" data-search-text="soda italiana xarope frutas sem álcool">
+              <div class="menu-item-info">
+                <div class="menu-item-title-row">
+                  <h4>Soda Italiana Artesanal</h4>
+                  <span class="menu-item-tag tag-fresh">Sem Álcool</span>
+                </div>
+                <p>Xarope natural de frutas vermelhas ou maçã verde com água gaseificada bem gelada e gelo.</p>
+              </div>
+              <div class="menu-item-price-col">
+                <span class="comanda-price">R$ 14</span>
+              </div>
+            </li>
+
+            <li class="menu-item-simple menu-item" data-search-text="bruma do engenho refresco sem álcool autoral">
+              <div class="menu-item-info">
+                <div class="menu-item-title-row">
+                  <h4>Bruma do Engenho</h4>
+                  <span class="menu-item-tag tag-fresh">Autoral Sem Álcool</span>
+                </div>
+                <p>Mix especial de abacaxi com hortelã fresca, melaço de cana suave e água com gás.</p>
+              </div>
+              <div class="menu-item-price-col">
+                <span class="comanda-price">R$ 15</span>
+              </div>
+            </li>
+
+            <li class="menu-item-simple menu-item" data-search-text="coquetel de frutas frescas batido sem álcool">
+              <div class="menu-item-info">
+                <div class="menu-item-title-row">
+                  <h4>Coquetel de Frutas Frescas</h4>
+                  <span class="menu-item-tag tag-fresh">Kids Friendly</span>
+                </div>
+                <p>Seleção de frutas tropicais da estação batidas com leite condensado e gelo na hora.</p>
+              </div>
+              <div class="menu-item-price-col">
+                <span class="comanda-price">R$ 16</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= ESPETINHOS DOCES ================= -->
+      <div class="menu-category" id="doces" data-category="doces">
+        <div class="menu-category-head">
+          <div>
+            <h2>Espetinhos Doces</h2>
+            <p style="color:var(--cream-300); font-size:0.95rem; margin-top:4px;">Para fechar a comanda com chave de ouro</p>
+          </div>
+          <span class="count">4 Opções de Sobremesa</span>
+        </div>
+
+        <div class="menu-list-wrap">
+          <ul>
+            <li class="menu-item-simple menu-item" data-search-text="morango com chocolate nobre sobremesa doce">
+              <div class="menu-item-info">
+                <div class="menu-item-title-row">
+                  <h4>Morango com Chocolate Nobre</h4>
+                  <span class="menu-item-tag tag-hot">Favorito</span>
+                </div>
+                <p>Morangos frescos e doces cobertos por camada generosa de ganache de chocolate ao leite.</p>
+              </div>
+              <div class="menu-item-price-col">
+                <span class="comanda-price">R$ 14</span>
+              </div>
+            </li>
+
+            <li class="menu-item-simple menu-item" data-search-text="banana com chocolate canela sobremesa">
+              <div class="menu-item-info">
+                <div class="menu-item-title-row">
+                  <h4>Banana com Chocolate &amp; Canela</h4>
+                </div>
+                <p>Rodelas de banana prata grelhadas no fogo com chocolate derretido e toque suave de canela.</p>
+              </div>
+              <div class="menu-item-price-col">
+                <span class="comanda-price">R$ 12</span>
+              </div>
+            </li>
+
+            <li class="menu-item-simple menu-item" data-search-text="queijo coalho com chocolate sobremesa regional">
+              <div class="menu-item-info">
+                <div class="menu-item-title-row">
+                  <h4>Queijo Coalho com Chocolate</h4>
+                  <span class="menu-item-tag tag-chef">Criação da Casa</span>
+                </div>
+                <p>O contraste perfeito do salgadinho do queijo coalho assado na brasa com o doce do chocolate quente.</p>
+              </div>
+              <div class="menu-item-price-col">
+                <span class="comanda-price">R$ 14</span>
+              </div>
+            </li>
+
+            <li class="menu-item-simple menu-item" data-search-text="marshmallow com chocolate derretido doce infantil kids">
+              <div class="menu-item-info">
+                <div class="menu-item-title-row">
+                  <h4>Marshmallow Tostado com Chocolate</h4>
+                  <span class="menu-item-tag tag-fresh">Sucesso Kids</span>
+                </div>
+                <p>Marshmallows tostados na brasa com recheio cremoso de chocolate e confeitos.</p>
+              </div>
+              <div class="menu-item-price-col">
+                <span class="comanda-price">R$ 12</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= REFEIÇÕES COMPLETAS ================= -->
+      <div class="menu-category" id="refeicoes" data-category="refeicoes">
+        <div class="menu-category-head">
+          <div>
+            <h2>Refeições Completas</h2>
+            <p style="color:var(--cream-300); font-size:0.95rem; margin-top:4px;">Para quem veio com fome de verdade e quer um prato encorpado</p>
+          </div>
+          <span class="count">Pratos Principais</span>
+        </div>
+
+        <div class="menu-grid" data-reveal="stagger">
+          <article class="comanda menu-item" data-search-text="risoto de camarão cremoso ervas almoço jantar">
+            <div class="comanda-media">
+              <img src="assets/images/sobre/sobre-comida-1.jpg" alt="Risoto cremoso de camarão">
+              <span class="comanda-badge-top-right">Especial do Chef</span>
+            </div>
+            <div class="comanda-perf"></div>
+            <div class="comanda-body">
+              <div class="comanda-head">
+                <h3>Risoto de Camarão</h3>
+                <span class="comanda-price">R$ 68</span>
+              </div>
+              <p>Arroz arbóreo italiano no ponto, fartura de camarões salteados na manteiga e finalização com ervas.</p>
+              <div class="comanda-footer-tags">
+                <span class="comanda-chip">Prato Individual / Duplo</span>
+                <span class="comanda-chip">Gourmet</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="menu-list-wrap">
+          <ul>
+            <li class="menu-item-simple menu-item" data-search-text="filé mignon macarrão fritas arroz chapa">
+              <div class="menu-item-info">
+                <div class="menu-item-title-row">
+                  <h4>Filé Mignon na Chapa com Fritas</h4>
+                  <span class="menu-item-tag tag-hot">Fartura</span>
+                </div>
+                <p>Medalhões de filé mignon grelhados, acompanhados de batatas crocantes, arroz branco e farofa da casa.</p>
+              </div>
+              <div class="menu-item-price-col">
+                <span class="comanda-price">R$ 58</span>
+              </div>
+            </li>
+
+            <li class="menu-item-simple menu-item" data-search-text="pratos para viagem marmita almoço">
+              <div class="menu-item-info">
+                <div class="menu-item-title-row">
+                  <h4>Pratos Executivos para Viagem (Take Away)</h4>
+                  <span class="menu-item-tag tag-fresh">Consulte o Garçom</span>
+                </div>
+                <p>Quer levar o sabor do Seu Antônio para casa? Pergunte a nossa equipe sobre as opções executivas do dia.</p>
+              </div>
+              <div class="menu-item-price-col">
+                <span class="comanda-price">Sob Consulta</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Search Empty State -->
+      <div id="menu-empty-state" class="menu-empty-state">
+        <h3>Nenhum item encontrado</h3>
+        <p>Não encontramos nenhum prato ou drink com o termo digitado. Tente buscar por "camarão", "gin", "chapa" ou "doce".</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="alt-bg">
+    <div class="container">
+      <div class="cta-band" data-reveal="up">
+        <div class="cta-band-content">
+          <span class="eyebrow">Mesa garantida</span>
+          <h2>Comida boa a gente mostra, mas o gosto é infinitamente melhor ao vivo.</h2>
+          <p>Garanta sua mesa agora para curtir a noite no Janga sem fila de espera.</p>
+        </div>
+        <div class="cta-band-actions">
+          <a href="reservas.html" class="btn btn-primary">Reservar minha mesa</a>
+          <a href="https://wa.me/5581979039543?text=Ol%C3%A1!%20Quero%20fazer%20um%20pedido%20ou%20reserva." class="btn btn-whatsapp" target="_blank" rel="noopener">Falar no WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <img src="assets/images/logo/logo-seu-antonio-simples.png" alt="Seu Antônio Janga">
+          <span class="brand-text">Seu Antônio<em>Bar &amp; Petiscaria</em></span>
+        </a>
+        <p>Bar e petiscaria no coração do Janga, Paulista - PE. Comida boa, drink gelado e música ao vivo todos os dias.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/seuantoniojanga" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="https://wa.me/5581979039543" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5.1-1.3A10 10 0 1012 2zm5.8 14.3c-.3.7-1.5 1.4-2 1.4-.6.1-1.2.2-3.9-1a11 11 0 01-4.5-4.6c-.7-1.2-.7-2.2-.6-2.5 0-.4.6-1.4 1.2-1.7.2-.2.5-.2.7-.2h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.5.7c-.1.2-.2.3 0 .6a8 8 0 003.5 3.2c.3.1.4.1.6-.1l.6-.8c.2-.2.4-.2.6-.1l2 1c.2.1.4.2.4.4a2 2 0 01-.1.6z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navegue</h4>
+        <a href="index.html">Início</a>
+        <a href="cardapio.html">Cardápio</a>
+        <a href="sobre.html">Sobre nós</a>
+        <a href="reservas.html">Reservas</a>
+        <a href="contato.html">Contato</a>
+      </div>
+      <div class="footer-col">
+        <h4>Cardápio</h4>
+        <a href="cardapio.html#petiscos">Petiscos e porções</a>
+        <a href="cardapio.html#drinks">Drinks</a>
+        <a href="cardapio.html#doces">Espetinhos doces</a>
+        <a href="cardapio.html#refeicoes">Refeições completas</a>
+      </div>
+      <div class="footer-col">
+        <h4>Visite</h4>
+        <a href="https://maps.google.com/?q=Av. Dr. Cláudio José Gueiros Leite, 2306, Janga, Paulista - PE" target="_blank" rel="noopener">Av. Dr. Cláudio José Gueiros Leite, 2306 — Janga, Paulista - PE</a>
+        <a href="tel:+5581979039543">(81) 97903-9543</a>
+        <span>Seg–Sex 16h–00h · Sáb 12h–00h · Dom 12h–23h</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year></span> Seu Antônio Janga. Todos os direitos reservados.</span>
+      <span>Feito com carinho no Janga, Paulista - PE.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/5581979039543" class="wa-float" target="_blank" rel="noopener" aria-label="Fale conosco no WhatsApp">
+  <div class="wa-pulse"></div>
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5.1-1.3A10 10 0 1012 2zm5.8 14.3c-.3.7-1.5 1.4-2 1.4-.6.1-1.2.2-3.9-1a11 11 0 01-4.5-4.6c-.7-1.2-.7-2.2-.6-2.5 0-.4.6-1.4 1.2-1.7.2-.2.5-.2.7-.2h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.5.7c-.1.2-.2.3 0 .6a8 8 0 003.5 3.2c.3.1.4.1.6-.1l.6-.8c.2-.2.4-.2.6-.1l2 1c.2.1.4.2.4.4a2 2 0 01-.1.6z"/></svg>
+</a>
+
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script defer src="js/main.js"></script>
+<script defer src="js/cardapio.js"></script>
+</body>
+</html>
