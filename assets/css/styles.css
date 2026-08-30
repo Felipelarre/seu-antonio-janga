@@ -128,10 +128,11 @@ strong{font-weight:700}
   background:var(--btn-bg);color:var(--btn-fg);
   border:1.5px solid var(--btn-bd);border-radius:var(--radius-pill);
   transition:transform .25s var(--ease),box-shadow .25s var(--ease),background .25s var(--ease),color .25s var(--ease);
-  will-change:transform;
 }
 .btn svg{width:1.15em;height:1.15em;flex:none}
-.btn:hover{transform:translateY(-2px);box-shadow:var(--shadow-glow)}
+@media (hover:hover){
+  .btn:hover{transform:translateY(-2px);box-shadow:var(--shadow-glow)}
+}
 .btn:active{transform:translateY(0)}
 .btn--lg{min-height:54px;padding:1rem 2rem;font-size:var(--step-0)}
 .btn--outline{--btn-bg:transparent;--btn-fg:var(--cream);--btn-bd:var(--line-2)}
@@ -147,15 +148,15 @@ strong{font-weight:700}
 .site-header{
   position:fixed;inset:0 0 auto;z-index:100;
   display:flex;align-items:center;
-  padding-block:.9rem;
+  padding-block:.7rem;
   background:transparent;
-  transition:background .35s var(--ease),padding .35s var(--ease),border-color .35s var(--ease);
+  transition:background .3s var(--ease),border-color .3s var(--ease);
   border-bottom:1px solid transparent;
 }
+/* fundo sólido no estado fixo — sem backdrop-filter, que trava o toque
+   no header fixo do iOS Safari depois que a página rola */
 .site-header.is-stuck{
-  background:rgba(20,16,12,.82);backdrop-filter:blur(12px);
-  -webkit-backdrop-filter:blur(12px);
-  padding-block:.55rem;border-bottom-color:var(--line);
+  background:#141009;border-bottom-color:var(--line);
 }
 .header-inner{width:100%;max-width:var(--container);margin-inline:auto;padding-inline:var(--gutter);
   display:flex;align-items:center;justify-content:space-between;gap:1rem}
@@ -173,9 +174,11 @@ strong{font-weight:700}
 .nav a.is-active::after{content:"";position:absolute;left:.8rem;right:.8rem;bottom:.28rem;height:2px;
   background:var(--dende);border-radius:2px}
 .header-cta{display:flex;align-items:center;gap:.6rem}
+/* z-index acima do painel (.nav = 99) para o X continuar clicável com o menu aberto */
 .nav-toggle{display:none;width:44px;height:44px;border-radius:12px;border:1px solid var(--line-2);
-  flex-direction:column;align-items:center;justify-content:center;gap:5px}
-.nav-toggle span{width:20px;height:2px;background:var(--cream);border-radius:2px;transition:transform .3s var(--ease),opacity .2s}
+  flex-direction:column;align-items:center;justify-content:center;gap:5px;position:relative;z-index:110}
+.nav-toggle span{width:20px;height:2px;background:var(--cream);border-radius:2px;pointer-events:none;
+  transition:transform .3s var(--ease),opacity .2s}
 body.nav-open .nav-toggle span:nth-child(1){transform:translateY(7px) rotate(45deg)}
 body.nav-open .nav-toggle span:nth-child(2){opacity:0}
 body.nav-open .nav-toggle span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
@@ -186,7 +189,7 @@ body.nav-open .nav-toggle span:nth-child(3){transform:translateY(-7px) rotate(-4
   background:var(--ink);text-align:center;
   transition:opacity .6s var(--ease),visibility .6s
 }
-.preloader.is-done{opacity:0;visibility:hidden}
+.preloader.is-done{opacity:0;visibility:hidden;pointer-events:none}
 .preloader-mark{font-family:var(--f-display);font-size:clamp(1.6rem,6vw,2.4rem);color:var(--cream)}
 .preloader-mark em{color:var(--dende)}
 .preloader svg{width:min(240px,60vw);height:40px;color:var(--dende)}
